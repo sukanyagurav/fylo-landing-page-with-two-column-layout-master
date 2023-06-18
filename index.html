@@ -9,6 +9,10 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,29 +30,31 @@
 </header>
   <main>
     <section class="section--1 flex">
-      <div class="section-txt-content item1 ">
-        <h1>All your files in one secure<br aria-hidden="true"/> location, accessible anywhere.
+      <div class="animate__animated animate__slideInUp section-txt-content item1 ">
+        <h1 class="">All your files in one secure<br aria-hidden="true"/> location, accessible anywhere.
         </h1>
         <p> Fylo stores your most important files in one secure location. 
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.</p>
-          
+      
             <div class="form-group flex">
-              <input type="email" required class="item1" id="input1">
-              <span class="errorMsg"></span>
+              <div class="form-input">
+                <input type="email" required class="item1" id="input1">
+                <span class="errorMsg errorMsg1"></span>
+              </div>
               <button class="btn item2" id="btn1">Get Started</button>
             </div>
-          
+         
       </div>
       <div class="section-img item2">
-        <img src="images/illustration-1.svg" alt="">
+        <img src="images/illustration-1.svg" class="animate__animated animate__zoomIn" alt="">
       </div>
     </section>
     <section class="section--2">
       <img src="images/bg-curve-desktop.svg" class="desktop-img pattern-img" alt=""aria-hidden="true">
       <img src="images/bg-curve-mobile.svg" class="mobile-img pattern-img" alt="" aria-hidden="true">
       <div class="wrapper flex">
-        <div class="section-txt-content item1">
+        <div class="section-txt-content animate__animated animate__delay-2s  animate__fadeInLeft item1">
             <div class="description">
               <h2>Stay productive, wherever you are</h2>
               <p>Never let location be an issue when accessing your files. Fylo has you 
@@ -57,11 +63,11 @@
                 live collaboration. No email attachments required!</p>
                 <div >
                 <a href="#" class="link-text">See how Fylo works
-                  <img src="images/icon-arrow.svg" alt="" aria-hidden="true">
+                  <img src="images/icon-arrow.svg"  alt="" aria-hidden="true">
                 </a>
               </div>  
               </div>
-              <div class="comment">
+              <div class="comment animate__animated animate__zoomIn animate__delay-2s">
                 <img src="images/icon-quotes.svg" class="quote" alt="">
                 <p>
                   Fylo has improved our team productivity by an order of magnitude. Since 
@@ -78,7 +84,7 @@
               </div>
         </div>
         <div class="section-img item2">
-          <img src="images/illustration-2.svg" alt="">
+          <img src="images/illustration-2.svg" class="animate__animated animate__zoomIn animate__delay-2s" alt="">
         </div>
       </div>
     </section>
@@ -86,20 +92,23 @@
   </main>
   <section class="section--3 ">
     <div class="cta-wrapper flex">
-    <div class="section-txt-content item1">
+    <div class="section-txt-content animate__animated animate__fadeInLeft  animate__delay-2s item1">
       <h3>Get early access today</h3>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
         If you have any questions, our support team would be happy to help you.
       </p>
     </div>
-    <div class="subscription item2">
-
+    <div class="subscription animate__animated animate__fadeInDown animate__delay-2s item2">
+       
         <div class="form-group flex">
-          <input type="email" required id="input2">
-          <span class="errorMsg"></span>
+          <div class="form-input">
+            <input type="email" required id="input2">
+            <span class="errorMsg errorMsg2"></span>
+          </div>
+          
           <button class="btn" id="btn2">Get Started For Free</button>
         </div>
-  
+      
     </div>
   </div>
   </section>

@@ -49,6 +49,10 @@ h1,h2{
 nav a{
     padding:0.3rem;
 }
+nav a:hover{
+    border-bottom:0.9px solid var(--cyan);
+
+}
 /* grid system -- mobile first! */
 .flex {
     display: flex;
@@ -109,7 +113,8 @@ input{
     border-radius:5px;
     border:0.5px solid var(--light-gray);
     outline:none;
-    width:350px;
+    width:100%;
+    max-width:350px;
     display:inline-block;
 }
 .form-input{
@@ -231,6 +236,7 @@ input{
 h3{
     font-size:1.8rem;
 }
+
 .cta-wrapper{
     margin:0 auto;
     padding:3rem 1rem;
@@ -322,7 +328,9 @@ footer ul li a:hover{
     .errorMsg{
         left:0;
         top:105%;
-    
+    }
+     input{
+        width:360px;
     }
     .btn{
         max-width:180px;

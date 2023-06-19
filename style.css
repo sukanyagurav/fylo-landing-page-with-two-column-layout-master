@@ -97,6 +97,7 @@ main{
 }
 .section--1 .section-txt-content{
     order:2;
+    align-self:center;
 }
 .section--1 .section-img{
     order:1;
@@ -330,7 +331,7 @@ footer ul li a:hover{
         top:105%;
     }
      input{
-        width:360px;
+        width:350px;
         max-width:100%;
     }
     .btn{
